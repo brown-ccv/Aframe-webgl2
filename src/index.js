@@ -72,6 +72,7 @@ var systems = require('./core/system').systems;
 // Exports THREE to window so three.js can be used without alteration.
 var THREE = window.THREE = require('./lib/three');
 
+
 var pkg = require('../package');
 
 require('./components/index'); // Register standard components.
@@ -89,7 +90,7 @@ require('./core/a-mixin');
 require('./extras/components/');
 require('./extras/primitives/');
 
-console.log('A-Frame Version: 0.9.2 (Date 2019-06-07, Commit #9f8e41a)');
+console.log('A-Frame Version: 0.9.2 (Date 2019-07-07, Commit #68bc50ec)');
 console.log('three Version (https://github.com/supermedium/three.js):',
             pkg.dependencies['super-three']);
 console.log('WebVR Polyfill Version:', pkg.dependencies['webvr-polyfill']);
@@ -119,5 +120,6 @@ module.exports = window.AFRAME = {
   systems: systems,
   THREE: THREE,
   utils: utils,
+  
   version: pkg.version
 };

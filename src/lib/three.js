@@ -1,4 +1,5 @@
 var THREE = global.THREE = require('super-three');
+// var Zlib = global.Zlib = require( './inflate.min.js' ).Zlib;
 
 // Allow cross-origin images to be loaded.
 
@@ -23,10 +24,12 @@ require('super-three/examples/js/loaders/DRACOLoader');  // THREE.DRACOLoader
 require('super-three/examples/js/loaders/GLTFLoader');  // THREE.GLTFLoader
 require('super-three/examples/js/loaders/OBJLoader');  // THREE.OBJLoader
 require('super-three/examples/js/loaders/MTLLoader');  // THREE.MTLLoader
+// require('super-three/examples/js/loaders/NRRDLoader');  // THREE.NRRDLoader
 
 THREE.DRACOLoader.prototype.crossOrigin = 'anonymous';
 THREE.GLTFLoader.prototype.crossOrigin = 'anonymous';
 THREE.MTLLoader.prototype.crossOrigin = 'anonymous';
 THREE.OBJLoader.prototype.crossOrigin = 'anonymous';
+// THREE.NRRDLoader.prototype.crossOrigin = 'anonymous';
 
 module.exports = THREE;
